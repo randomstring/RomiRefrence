@@ -14,5 +14,10 @@
     "**/.factorypath": true,
     "**/*~": true
   },
-  "wpilib.skipSelectSimulateExtension": true
+  "wpilib.skipSelectSimulateExtension": true,
+  "cSpell.words": [
+    "gamepad",
+    "Romi",
+    "wpilib"
+  ]
 }
