@@ -5,9 +5,7 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.GenericHID;
-import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.XboxController;
-import edu.wpi.first.wpilibj.GenericHID.Hand;
 import frc.robot.commands.ArcadeDrive;
 import frc.robot.commands.AutonomousDistance;
 import frc.robot.commands.AutonomousTime;
@@ -93,6 +91,6 @@ public class RobotContainer {
    */
   public Command getArcadeDriveCommand() {
     return new ArcadeDrive(
-        m_drivetrain, () -> 0.8 * (-m_controller.getY(Hand.kLeft)), () -> 0.8 * m_controller.getX(Hand.kRight));
+        m_drivetrain, () -> 0.8 * (-m_controller.getLeftY()), () -> 0.8 * m_controller.getRightX());
   }
 }
